@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 class Linklist
 {
  static Link first;
@@ -22,6 +23,7 @@ public static Link insert(int data)
  Link li=null;
  Link new_link = new Link(data);
  new_link.next = null;
+ 
  if(first == null)
  {
   first = new_link;
@@ -104,7 +106,12 @@ switch(choice)
      System.out.println("Enter the positions to swap:");
      int i = sc.nextInt();
      int j=sc.nextInt();
+     int k = sc.nextInt();
+     System.out.println(k+1);
      Link ithlink=l.first , jthlink=l.first;
+     
+     i = j +k;
+     System.out.println(k+1);
      for(int link=0;link<i;link++)
      {
       ithlink=ithlink.next;
